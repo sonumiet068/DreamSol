@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="default" extends="struts-default">
+<action name="home" class="Dreamsol.action.CurdOperationAction" method="home">
+<result name="success">/Welcome.jsp</result>
+<result name="error">/Error.jsp</result>
+</action>
+<action name="insertion" class="Dreamsol.action.CurdOperationAction" method="insert">
+<result name="success">/LoginPage.jsp</result>
+<result name="error">/Error.jsp</result>
+</action>
+<action name="deletion" class="Dreamsol.action.CurdOperationAction" method="update">
+<result name="success">/LoginPage.jsp</result>
+<result name="error">/Error.jsp</result>
+</action>
+<action name="updation" class="Dreamsol.action.CurdOperationAction" method="delete">
+<result name="success">/Pages/LoginPage.jsp</result>
+<result name="error">/Pages/Error.jsp</result>
+</action>
+<action name="shows" class="Dreamsol.action.CurdOperationAction" method="shows">
+<result name="success">/ViewsPage.jsp</result>
+<result name="error">/Error.jsp</result>
+</action>
+
+</package>
+</struts>
