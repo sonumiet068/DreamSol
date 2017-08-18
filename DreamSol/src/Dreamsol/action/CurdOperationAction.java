@@ -12,6 +12,7 @@ public class CurdOperationAction extends ActionSupport implements ModelDriven<In
  private InsertionForm form=new InsertionForm();
  public String home()
  {
+	 System.out.println("sssdd");
 	 return "success";
  }
 public String insert()
